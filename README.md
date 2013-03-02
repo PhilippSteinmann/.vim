@@ -1,2 +1,2 @@
-.vim
+vim Configuration of Philipp Steinmann
 ====
