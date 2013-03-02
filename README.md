@@ -1,2 +1,2 @@
-#.vim directory and .vimrc
+#.vim/ and .vimrc
 ### of Philipp Steinmann
