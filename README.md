@@ -1,2 +1,2 @@
-vim Configuration of Philipp Steinmann
-====
+#.vim directory and .vimrc
+### of Philipp Steinmann
