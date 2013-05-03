@@ -54,3 +54,7 @@ nmap \q :nohlsearch<CR>
 " I <3 pathogen
 call pathogen#infect()
 call pathogen#helptags()
+
+syntax on                           " syntax highlighing
+filetype on                          " try to detect filetypes
+filetype plugin indent on    " enable loading indent file for filetype
