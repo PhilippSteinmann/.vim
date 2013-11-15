@@ -1,5 +1,10 @@
 " Many are from http://statico.github.com/vim.html
 
+" Enable color terminal 
+if $COLORTERM == 'gnome-terminal'
+      set t_Co=256
+  endif
+
 " My beautiful color scheme
 colorscheme xoria256
   
@@ -58,3 +63,13 @@ call pathogen#helptags()
 syntax on                           " syntax highlighing
 filetype on                          " try to detect filetypes
 filetype plugin indent on    " enable loading indent file for filetype
+
+" Makes Java 100x easier. Source:
+" https://groups.google.com/d/msg/vim_use/fx_ejF6OWJo/7VyoBwUCuikJ
+function! Eatchar(pat)
+    let c = nr2char(getchar(0))
+    return (c =~ a:pat) ? '' : c
+endfunction
+
+
+iabbrev sout System.out.println(<c-r>=Eatchar('\s')<cr>
